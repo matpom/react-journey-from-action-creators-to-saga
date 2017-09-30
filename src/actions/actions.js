@@ -1,22 +1,15 @@
-import { FETCHING_TODOS, FETCHING_TODOS_SUCCESS, FETCHING_TODOS_FAILURE } from './constants';
+import { FETCHING_TODOS_SUCCESS, CLEAR_TODOS } from './constants';
+import {todos} from "../api/api";
 
-export function getTodos() {
-  return {
-    type: FETCHING_TODOS
-  };
-}
-
-export function getTodosSuccess(data) {
+export function fetchTodos() {
   return {
     type: FETCHING_TODOS_SUCCESS,
-    data,
-  };
+    payload: todos,
+  }
 }
 
-export function getTodosFailure() {
+export function clearTodos() {
   return {
-    type: FETCHING_TODOS_FAILURE
-  };
+    type: CLEAR_TODOS,
+  }
 }
-
-export function fetchTodos() {}

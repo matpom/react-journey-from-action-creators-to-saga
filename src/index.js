@@ -5,14 +5,14 @@ import ReactDOM from 'react-dom';
 
 
 import configureStore from './configureStore';
-import Home from './components/home.component';
+import Todos from './components/TodoContainer';
 
 const store = configureStore();
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
-      <Route path="/" component={Home}/>
+      <Route path="/" component={Todos}/>
     </Router>
   </Provider>,
   document.getElementById('root')

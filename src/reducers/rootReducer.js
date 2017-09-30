@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import appData from './dataReducer'
+import todos from './todosReducer'
 
 const rootReducer = combineReducers({
-                                      appData
+                                      todos
                                     });
 
 export default rootReducer;
