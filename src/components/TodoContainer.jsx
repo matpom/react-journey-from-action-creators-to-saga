@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Button } from "react-bootstrap";
 
 import './TodoContainer.css'
-import {clearTodos, fetchTodos} from '../actions/actions';
+import { clearTodos, fetchTodos } from '../actions/actions';
 import TodoTable from "./TodoTable"
 
 class Home extends React.Component {

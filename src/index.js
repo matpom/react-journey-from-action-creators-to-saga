@@ -3,7 +3,6 @@ import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import ReactDOM from 'react-dom';
 
-
 import configureStore from './configureStore';
 import Todos from './components/TodoContainer';
 

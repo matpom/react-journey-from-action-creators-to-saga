@@ -1,5 +1,5 @@
 import { FETCHING_TODOS_SUCCESS, CLEAR_TODOS } from './constants';
-import {todos} from "../api/api";
+import { todos } from "../api/api";
 
 export function fetchTodos() {
   return {
