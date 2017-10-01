@@ -1,23 +1,12 @@
-import { FETCHING_TODOS_SUCCESS, CLEAR_TODOS } from './constants';
+import { FETCH_TODOS, CLEAR_TODOS } from './constants';
 import * as api from '../api/api'
 
-export function fetchTodosSuccess(todos) {
-  return {
-    type: FETCHING_TODOS_SUCCESS,
-    payload: todos,
-  }
-}
-
 export function fetchTodos() {
-  return (dispatch) => {
-    api.fetchTodos()
-      .then((data) => {
-        dispatch(fetchTodosSuccess(data))
-      })
-      .catch((err) => console.log('err:', err))
+  return {
+    type: FETCH_TODOS,
+    payload: api.fetchTodos(),
   }
 }
-
 
 export function clearTodos() {
   return {

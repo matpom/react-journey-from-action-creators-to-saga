@@ -6,8 +6,11 @@ const todos = [
 ];
 
 export function fetchTodos() {
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {
+      if(Math.random() >= 0.7) {
+        return reject()
+      }
       return resolve(todos);
     }, 2000)
   });
