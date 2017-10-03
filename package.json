@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "json-server": "^0.12.0",
     "react": "^15.6.2",
     "react-bootstrap": "^0.31.3",
     "react-dom": "^15.6.2",
@@ -18,6 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "mock": "node ./scripts/mock/start.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
